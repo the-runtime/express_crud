@@ -18,6 +18,7 @@ app.get("/", (req,res) => {
 });
 
 const PORT = process.env.PORT || 8000;
+require("./app/routes/tutorials.routes")(app);
 app.listen(PORT, () => {
 	console.log('Server is running on port ${PORT}.');
 });

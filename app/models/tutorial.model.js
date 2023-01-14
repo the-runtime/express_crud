@@ -8,7 +8,7 @@ module.exports = mongoose => {
 				published: Boolean
 			},
 			{ timestamps: true}
-		);
+		))
 
 		return Tutorial;
 };
